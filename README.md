@@ -8,15 +8,13 @@
 
 Este proyecto fue desarrollado como parte de la evaluación para la asignatura:
 
-Universidad : [Universidad Don Bosco]
+**Universidad:** [Universidad Don Bosco]
 
-Facultad: [Factultad de ingenieria]
+**Facultad:** [Factultad de ingenieria]
 
-Asignatura: [Programación de Software Multiplataforma - DPS]
+**Asignatura:** [Programación de Software Multiplataforma - DPS]
 
-Docente: [Ing. Alexander Alberto Siguenza Campos]
-
-
+**Docente:** [Ing. Alexander Alberto Siguenza Campos]
 
 ## 🌐 Demo en vivo
 [Ver demostración](url-pendiente-de-produccion)
@@ -94,4 +92,4 @@ git clone https://github.com/marroquin9953/Carrito-de-compras-JS.git
 Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más información.
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
-[imagen-proyecto]: coloca-aqui-url-de-la-imagen
+[imagen-proyecto]:https://www.colombiahosting.com.co/blog/wp-content/uploads/2021/08/como-crear-pagina-en-construccion.png
