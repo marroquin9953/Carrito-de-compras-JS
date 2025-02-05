@@ -8,7 +8,7 @@
 
 Este proyecto fue desarrollado como parte de la evaluación para la asignatura:
 
-Universidad: [Universidad Don Bosco]
+Universidad : [Universidad Don Bosco]
 
 Facultad: [Factultad de ingenieria]
 
@@ -36,24 +36,30 @@ Docente: [Ing. Alexander Alberto Siguenza Campos]
 </div>
 
 ## 👥 Equipo de desarrollo
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://www.linkedin.com/in/isidro-marroquin-51a028264/">
-        <img src="https://github.com/marroquin9953.png" alt="Foto Perfil 1" width="100" height="100" style="border-radius:50%"/>
-        <br />
-        <sub><b>Isidro Marroquin (ME221443)</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.linkedin.com/in/usuario2/">
-        <img src="https://github.com/Emilia04.png" alt="Foto Perfil 2" width="100" height="100" style="border-radius:50%"/>
-        <br />
-        <sub><b>Emilia Barreiro (MB211545)</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" style="padding: 15px; border-radius: 10px; background: #f4f4f4; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);">
+        <a href="https://www.linkedin.com/in/isidro-marroquin-51a028264/">
+          <img src="https://github.com/marroquin9953.png" alt="Foto Perfil 1" width="110" height="110" style="border-radius:50%; border: 3px solid #4CAF50;"/>
+          <br />
+          <sub><b>Isidro Marroquin</b></sub>
+          <br />
+          <sub style="color: gray;">ME221443</sub>
+        </a>
+      </td>
+      <td align="center" style="padding: 15px; border-radius: 10px; background: #f4f4f4; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);">
+        <a href="https://www.linkedin.com/in/usuario2/">
+          <img src="https://github.com/Emilia04.png" alt="Foto Perfil 2" width="110" height="110" style="border-radius:50%; border: 3px solid #2196F3;"/>
+          <br />
+          <sub><b>Emilia Barreiro</b></sub>
+          <br />
+          <sub style="color: gray;">MB211545</sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ## 🚀 Hosting
 Este proyecto está alojado en GitHub Pages, una plataforma gratuita y confiable para el despliegue de aplicaciones web estáticas.
