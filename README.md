@@ -4,8 +4,22 @@
 
 > Carrito de compras desarrollado con JavaScript, permitiendo una gestión completa de productos y facturación.
 
+## 📚 Información Académica
+
+Este proyecto fue desarrollado como parte de la evaluación para la asignatura:
+
+Universidad: [Universidad Don Bosco]
+
+Facultad: [Factultad de ingenieria]
+
+Asignatura: [Programación de Software Multiplataforma - DPS]
+
+Docente: [Ing. Alexander Alberto Siguenza Campos]
+
+
+
 ## 🌐 Demo en vivo
-[Ver demostración](coloca-aqui-tu-url-de-produccion)
+[Ver demostración](url-pendiente-de-produccion)
 
 ## ⭐ Características principales
 - Gestión dinámica de productos
@@ -28,14 +42,14 @@
       <a href="https://www.linkedin.com/in/isidro-marroquin-51a028264/">
         <img src="https://github.com/marroquin9953.png" alt="Foto Perfil 1" width="100" height="100" style="border-radius:50%"/>
         <br />
-        <sub><b>Isidro Marroquin</b></sub>
+        <sub><b>Isidro Marroquin (ME221443)</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/in/usuario2/">
         <img src="https://github.com/Emilia04.png" alt="Foto Perfil 2" width="100" height="100" style="border-radius:50%"/>
         <br />
-        <sub><b>Emilia Barreiro</b></sub>
+        <sub><b>Emilia Barreiro (MB211545)</b></sub>
       </a>
     </td>
   </tr>
