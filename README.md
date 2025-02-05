@@ -25,18 +25,19 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://linkedin.com/in/usuario1">
-        <img src="/api/placeholder/100/100" alt="Foto Integrante 1" width="100" height="100" style="border-radius:50%"/>
+      <a href="https://www.linkedin.com/in/isidro-marroquin-51a028264/">
+        <img src="[/api/placeholder/100/100](https://github.com/marroquin9953.png)" alt="Foto Perfil 1" width="100" height="100" style="border-radius:50%"/>
         <br />
-        <sub><b>Nombre Integrante 1</b></sub>
+        <sub><b>Isidro Marroquin</b></sub>
       </a>
     </td>
-    <!-- Agregar más integrantes siguiendo el mismo formato -->
+    <!-- Aqui podemos agregarnos compañeros -->
   </tr>
 </table>
 
 ## 🚀 Hosting
 Este proyecto está alojado en GitHub Pages, una plataforma gratuita y confiable para el despliegue de aplicaciones web estáticas.
+[Ver pagina oficional](coloca-aqui-tu-url-de-produccion)
 
 ## 📁 Estructura del proyecto
 ```
@@ -58,7 +59,7 @@ root/
 ## 🔧 Instalación y uso
 1. Clona este repositorio
 ```bash
-git clone https://github.com/tu-usuario/nombre-repositorio.git
+git clone https://github.com/marroquin9953/Carrito-de-compras-JS.git
 ```
 2. Abre el archivo `index.html` en tu navegador
 3. ¡Listo para usar!
