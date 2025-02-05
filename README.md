@@ -31,7 +31,13 @@
         <sub><b>Isidro Marroquin</b></sub>
       </a>
     </td>
-    <!-- Aqui podemos agregarnos compañeros -->
+    <td align="center">
+      <a href="https://www.linkedin.com/in/usuario2/">
+        <img src="https://github.com/Emilia04.png" alt="Foto Perfil 2" width="100" height="100" style="border-radius:50%"/>
+        <br />
+        <sub><b>Emilia Barreiro</b></sub>
+      </a>
+    </td>
   </tr>
 </table>
 
