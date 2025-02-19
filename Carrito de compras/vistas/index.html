@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+
+   <body>
+    
+
+
+    <header>
+
+        <div class="logo">
+            Tienda en Línea SV
+        </div>
+
+        <div class="bolsa bi-bag">
+            <span class="cuenta">0</span>
+
+            <div class="carrito">
+
+                <div class="arriba">
+                    <h3>Tu Carrito Esta vacio!</h3>
+                    <p>Empieza a Comprar ahora!</p>
+                </div>
+
+
+                <table>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+                <div class="abajo">
+                    <div class="precios">
+                        <p>Total:</p>
+                        <p id="precio5">0</p>
+                    </div>
+
+                    <div class="botones">
+                        <button>CHECKOUT</button>
+                        <button>VIEWCART</button>
+                    </div>
+                    <a href="#" id="vaciar" OnClick="vaciar2();">Vaciar Carrito</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="productos">
+
+        <div class="producto">
+            <div class="imagen">
+                <img src="../img/imac.jpg" alt="">
+            </div>
+
+            <h3>iMac</h3>
+            <p>$2599.99</p>
+            <div class="cantidad-container">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" min="1" value="1">
+            </div>
+
+            <button>Anadir Al Carrito</button>
+    
+        </div>
+
+
+        <div class="producto">
+            <div class="imagen">
+                <img src="../img/iphone16rosa.jpg" alt="">
+            </div>
+
+            <h3>iPhones 16 Rosa</h3>
+            <p>$799.99</p>
+            <div class="cantidad-container">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" min="1" value="1">
+            </div>
+            <button>Anadir Al Carrito</button>
+    
+        </div>
+
+        <div class="producto">
+            <div class="imagen">
+                <img src="../img/ipadair.jpg" alt="">
+            </div>
+
+            <h3>iPad Air 13 inch</h3>
+            <p>$899.99</p>
+            <div class="cantidad-container">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" min="1" value="1">
+            </div>
+            <button>Anadir Al Carrito</button>
+    
+        </div>
+
+        <div class="producto">
+            <div class="imagen">
+                <img src="../img/macbookpro.jpg" alt="">
+            </div>
+
+            <h3>Macbook Pro 14</h3>
+            <p>$1999.99</p>
+            <div class="cantidad-container">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" min="1" value="1">
+            </div>
+            <button>Anadir Al Carrito</button>
+    
+        </div>
+
+        <div class="producto">
+            <div class="imagen">
+                <img src="../img/iphone16.jpg" alt="">
+            </div>
+
+            <h3>iPhone 16 pro Max</h3>
+            <p>$1999.99</p>
+            <div class="cantidad-container">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" min="1" value="1">
+            </div>
+            <button>Anadir Al Carrito</button>
+    
+        </div>
+        
+        
+
+
+    </div>
+
+
+
+
+
+
+   </body>
+   
+   <script src="../vistas/script.js"></script>
+
+
+</html>
