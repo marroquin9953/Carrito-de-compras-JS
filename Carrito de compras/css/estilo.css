@@ -1,46 +1,84 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
 }
 
+/* Contenedor de la factura */
 .factura-container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 400px;
+    width: 420px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.factura-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Título de la factura */
 .factura-container h2 {
     margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
 }
 
+/* Detalles de la factura */
 .factura-detalle {
     text-align: left;
     margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
 }
 
+.factura-detalle p {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Total en negrita */
 .factura-total {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    color: #222;
 }
 
+/* Botón de volver */
 .boton-volver {
     background: #28a745;
-    align-items: center;
     color: white;
-    padding: 10px;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
-    width: 95%;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 6px;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
     display: inline-block;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.boton-volver:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+.boton-volver:active {
+    transform: scale(0.95);
 }
