@@ -5,6 +5,15 @@ let botones = document.querySelectorAll(".productos .producto button");
 let cuenta = document.querySelector(".bolsa .cuenta");
 let total = document.getElementById("precio5");
 
+ // Obtén el botón y el menú
+const toggleButton = document.getElementById('bolsa_bi-bag');
+const menu = document.getElementById('carrito');
+
+// Añadir un event listener para el clic en el botón
+toggleButton.addEventListener('click', () => {
+  // Alterna la clase 'oculto' para ocultar o mostrar el menú
+  menu.classList.toggle('oculto');
+});
 
     function anadir(){
 
