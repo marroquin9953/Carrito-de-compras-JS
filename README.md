@@ -53,6 +53,15 @@ Este proyecto fue desarrollado como parte de la evaluación para la asignatura:
           <sub style="color: gray;">MB211545</sub>
         </a>
       </td>
+      <td align="center" style="padding: 15px; border-radius: 10px; background: #f4f4f4; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);">
+        <a href="https://www.linkedin.com/in/usuario3/">
+          <img src="https://github.com/mario-diaz9.png" alt="Foto Perfil 3" width="110" height="110" style="border-radius:50%; border: 3px solid #2196F3;"/>
+          <br />
+          <sub><b>Mario Diaz</b></sub>
+          <br />
+          <sub style="color: gray;">DA202822</sub>
+        </a>
+      </td>
     </tr>
   </table>
 </div>
