@@ -17,7 +17,7 @@ Este proyecto fue desarrollado como parte de la evaluación para la asignatura:
 **Docente:** [Ing. Alexander Alberto Siguenza Campos]
 
 ## 🌐 Demo en vivo
-[Ver demostración](url-pendiente-de-produccion)
+[Ver demostración](https://eventos.ieee.org.sv/project/)
 
 ## 🛠 Tecnologías utilizadas
 <div align="center">
@@ -53,8 +53,8 @@ Este proyecto fue desarrollado como parte de la evaluación para la asignatura:
 </div>
 
 ## 🚀 Hosting
-Este proyecto está alojado en GitHub Pages, una plataforma gratuita y confiable para el despliegue de aplicaciones web estáticas.
-[Ver pagina oficional](coloca-aqui-tu-url-de-produccion)
+Este proyecto está alojado en VPS Privado, con fines de aplicaciones web estáticas.
+[Ver pagina oficional](https://eventos.ieee.org.sv/project/)
 
 ## Estructura del Proyecto
 
