@@ -100,17 +100,6 @@ Este proyecto es una tienda en línea de Apple que incluye las siguientes caract
 - Confirmación de pedidos
 - Envío de correos de confirmación
 
-## Tecnologías Utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- Vite
-- TailwindCSS
-- TypeScript
-- ESLint
-- PostCSS
-
 ## Configuración del Proyecto
 
 1. Instalar dependencias:
