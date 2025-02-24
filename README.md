@@ -19,14 +19,7 @@ Este proyecto fue desarrollado como parte de la evaluación para la asignatura:
 ## 🌐 Demo en vivo
 [Ver demostración](url-pendiente-de-produccion)
 
-## �?Características principales
-- Gestión dinámica de productos
-- Cálculo automático de totales
-- Sistema de facturación integrado
-- Manejo de inventarios
-- Interfaz intuitiva y responsive
-
-## 🛠�?Tecnologías utilizadas
+## 🛠 Tecnologías utilizadas
 <div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
@@ -93,7 +86,7 @@ Este proyecto está alojado en GitHub Pages, una plataforma gratuita y confiable
 └── 📄 vite.config.ts
 ```
 
-## Descripción
+## Caracteristicas
 
 Este proyecto es una tienda en línea de Apple que incluye las siguientes características:
 - Catálogo de productos
