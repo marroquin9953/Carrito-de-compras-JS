@@ -159,4 +159,4 @@ git clone https://github.com/marroquin9953/Carrito-de-compras-JS.git
 Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más información.
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
-[imagen-proyecto]:https://www.colombiahosting.com.co/blog/wp-content/uploads/2021/08/como-crear-pagina-en-construccion.png
+[imagen-proyecto]:https://eventos.ieee.org.sv/project/Proyecto1.jpg
