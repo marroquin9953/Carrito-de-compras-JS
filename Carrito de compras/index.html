@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store SV</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="bi bi-apple"></i>
+            Apple Store SV
+        </div>
+        <div class="cart-icon" id="cartIcon">
+            <i class="bi bi-bag"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Tu Carrito</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be inserted here -->
+            </div>
+            <div class="cart-summary">
+                <div class="total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <div class="cart-buttons">
+                    <button id="continueShoppingBtn" class="secondary-btn">Seguir Comprando</button>
+                    <button id="checkoutBtn" class="primary-btn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="products-grid">
+        <div class="product-card" data-id="1">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80" alt="iMac">
+            <h3>iMac</h3>
+            <p class="price">$1,599.99</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+
+        <div class="product-card" data-id="2">
+            <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="iPhone 16 Pro">
+            <h3>iPhone 16 Pro</h3>
+            <p class="price">$779.99</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+
+        <div class="product-card" data-id="3">
+            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" alt="MacBook Pro">
+            <h3>MacBook Pro</h3>
+            <p class="price">$800.99</p>
+            <div class="quantity-selector">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" class="quantity-input">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+    </main>
+
+    <script src="Js/script.js"></script>
+</body>
+</html>
