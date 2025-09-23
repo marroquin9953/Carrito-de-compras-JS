@@ -1,4 +1,5 @@
 :root {
+    /* 🎨 Colores */
     --primary-color: #007AFF;
     --secondary-color: #5856D6;
     --background-color: #F2F2F7;
@@ -6,8 +7,20 @@
     --border-color: #C7C7CC;
     --success-color: #34C759;
     --error-color: #FF3B30;
+
+    /* 🔤 Tipografía */
+    --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-size-base: 16px;
+    --font-size-small: 14px;
+    --font-size-large: 18px;
+
+    /* 📏 Espaciado y estilo */
+    --spacing: 1rem;
+    --radius: 8px;
+    --shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* ---------------- RESET ---------------- */
 *,
 *::before,
 *::after {
@@ -17,9 +30,10 @@
 }
 
 body {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--text-color);
+    font-size: var(--font-size-base);
     line-height: 1.6;
 }
 
@@ -33,7 +47,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
 }
 
 .logo {
@@ -50,7 +65,7 @@ header {
     position: relative;
     font-size: 24px;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .bolsa:hover,
@@ -82,10 +97,10 @@ header {
     top: 100%;
     background-color: #fff;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     display: none;
-    z-index: 1;
+    z-index: 10;
     transition: all 0.3s ease;
 }
 
@@ -94,22 +109,22 @@ header {
 }
 
 .carrito .arriba h3 {
-    font-size: 18px;
+    font-size: var(--font-size-large);
     margin-bottom: 8px;
 }
 
 .carrito .arriba p {
-    font-size: 14px;
-    color: #666;
+    font-size: var(--font-size-small);
+    color: #444; /* mejor contraste */
 }
 
 .carrito table {
     width: 100%;
     margin-top: 15px;
     background-color: #efefef;
-    border-radius: 6px;
+    border-radius: var(--radius);
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
 .carrito table tbody {
@@ -156,18 +171,17 @@ header {
     border-radius: 12px;
     padding: 20px;
     width: 250px;
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
 }
 
 .productos .producto:hover,
 .product-card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -176,7 +190,7 @@ header {
     width: 100%;
     height: 200px;
     background-color: #f1f1f1;
-    border-radius: 8px;
+    border-radius: var(--radius);
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -186,11 +200,11 @@ header {
 .producto .imagen img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 
 .producto h3 {
-    font-size: 18px;
+    font-size: var(--font-size-large);
     text-align: center;
     margin-top: 15px;
 }
@@ -205,44 +219,44 @@ header {
 }
 
 /* ---------------- BOTONES ---------------- */
-.producto button,
-.add-to-cart {
-    width: 100%;
-    padding: 12px;
-    border-radius: 6px;
-    border: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.producto button:hover,
-.add-to-cart:hover {
-    background-color: var(--secondary-color);
-}
-
-.producto button:active {
-    background-color: #066fa1;
-}
-
-.botones button,
+button,
+.add-to-cart,
 .primary-btn,
 .secondary-btn {
-    padding: 12px;
     width: 100%;
-    font-size: 14px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: var(--radius);
+    border: none;
     cursor: pointer;
+    font-size: var(--font-size-base);
     font-weight: 500;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    box-shadow: var(--shadow);
 }
 
+button:focus,
+.add-to-cart:focus,
+.primary-btn:focus,
+.secondary-btn:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.add-to-cart,
 .primary-btn {
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
+}
+
+.add-to-cart:hover,
+.primary-btn:hover {
+    background-color: var(--secondary-color);
 }
 
 .secondary-btn {
@@ -267,12 +281,14 @@ header {
     position: sticky;
     top: 2rem;
     height: fit-content;
+    box-shadow: var(--shadow);
 }
 
 .checkout-form {
     background-color: white;
     padding: 2rem;
     border-radius: 12px;
+    box-shadow: var(--shadow);
 }
 
 .form-group {
@@ -290,8 +306,8 @@ header {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    font-size: 1rem;
+    border-radius: var(--radius);
+    font-size: var(--font-size-base);
 }
 
 .form-group textarea {
@@ -311,6 +327,7 @@ header {
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
+    box-shadow: var(--shadow);
 }
 
 .success-icon {
@@ -351,5 +368,20 @@ header {
 
     .checkout-summary {
         position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .productos {
+        padding: 1rem;
+    }
+
+    .producto {
+        width: 100%;
     }
 }
