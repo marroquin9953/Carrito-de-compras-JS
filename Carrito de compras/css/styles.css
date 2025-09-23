@@ -1,4 +1,14 @@
-**,
+:root {
+    --primary-color: #007AFF;
+    --secondary-color: #5856D6;
+    --background-color: #F2F2F7;
+    --text-color: #1C1C1E;
+    --border-color: #C7C7CC;
+    --success-color: #34C759;
+    --error-color: #FF3B30;
+}
+
+*,
 *::before,
 *::after {
     margin: 0;
@@ -7,11 +17,13 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
+/* ---------------- HEADER ---------------- */
 header {
     width: 100%;
     max-width: 1200px;
@@ -24,33 +36,45 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.bolsa {
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ---------------- ICONO DEL CARRITO ---------------- */
+.bolsa,
+.cart-icon {
     position: relative;
     font-size: 24px;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-.bolsa:hover {
-    color: #0078d4;
+.bolsa:hover,
+.cart-icon:hover {
+    color: var(--primary-color);
 }
 
-.cuenta {
-    width: 18px;
-    height: 18px;
-    background-color: #f44336;
-    font-size: 12px;
-    color: #fff;
+.cuenta,
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     border: 1px solid #fff;
-    position: absolute;
-    right: -7px;
-    bottom: -4px;
 }
 
+/* ---------------- CARRITO ---------------- */
 .carrito {
     width: 280px;
     position: absolute;
@@ -81,7 +105,6 @@ header {
 
 .carrito table {
     width: 100%;
-    height: auto;
     margin-top: 15px;
     background-color: #efefef;
     border-radius: 6px;
@@ -99,7 +122,6 @@ header {
 .carrito table tbody tr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 20px;
-    justify-content: space-between;
     align-items: center;
     gap: 5px;
     padding: 10px;
@@ -115,23 +137,9 @@ header {
     color: #333;
 }
 
-.cantidad-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-.cantidad-container input {
-    width: 50px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.productos {
+/* ---------------- PRODUCTOS ---------------- */
+.productos,
+.products-grid {
     width: 100%;
     max-width: 1200px;
     margin: 30px auto;
@@ -139,28 +147,37 @@ header {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    padding: 2rem;
 }
 
-.productos .producto {
-    width: 250px;
-    height: 400px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
+.productos .producto,
+.product-card {
     background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.productos .producto:hover {
+.productos .producto:hover,
+.product-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.producto .imagen {
+.producto .imagen,
+.product-card img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-color: #f1f1f1;
     border-radius: 8px;
+    object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,83 +195,139 @@ header {
     margin-top: 15px;
 }
 
-.producto p {
+.producto p,
+.price {
     font-size: 16px;
     text-align: center;
     margin-top: 10px;
-    color: #555;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
-.producto button {
+/* ---------------- BOTONES ---------------- */
+.producto button,
+.add-to-cart {
     width: 100%;
     padding: 12px;
     border-radius: 6px;
     border: none;
-    background-color: #00b7ff;
+    background-color: var(--primary-color);
     color: #fff;
     margin-top: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.producto button:hover {
-    background-color: #0078d4;
+.producto button:hover,
+.add-to-cart:hover {
+    background-color: var(--secondary-color);
 }
 
 .producto button:active {
     background-color: #066fa1;
 }
 
-.abajo .precios {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: #f1f1f1;
-    border-radius: 6px;
-    margin-top: 15px;
-}
-
-.precios p {
-    font-size: 16px;
-    color: #555;
-}
-
-.botones button {
+.botones button,
+.primary-btn,
+.secondary-btn {
     padding: 12px;
     width: 100%;
     font-size: 14px;
-    border: none;
-    background-color: #00b7ff;
     border-radius: 5px;
-    color: #fff;
-    margin-top: 10px;
     cursor: pointer;
+    font-weight: 500;
+    margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
-.botones button:hover {
-    background-color: #0078d4;
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
 }
 
-.botones button:active {
-    background-color: #066fa1;
+.secondary-btn {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-.abajo a {
+/* ---------------- CHECKOUT ---------------- */
+.checkout-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.checkout-summary {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.checkout-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
     display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
     width: 100%;
-    text-align: right;
-    font-size: 14px;
-    color: #0078d4;
-    margin-top: 12px;
-    text-decoration: none;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
 }
 
-.abajo a:hover {
-    text-decoration: underline;
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
 }
 
-/* Media queries for responsiveness */
+/* ---------------- CONFIRMACIÓN ---------------- */
+.confirmation-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.confirmation-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: var(--success-color);
+    margin-bottom: 1rem;
+}
+
+.order-details,
+.shipping-info {
+    text-align: left;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
     .productos {
         flex-direction: column;
@@ -270,5 +343,13 @@ header {
         position: static;
         box-shadow: none;
         padding: 10px;
+    }
+
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-summary {
+        position: static;
     }
 }

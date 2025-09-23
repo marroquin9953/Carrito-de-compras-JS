@@ -33,14 +33,8 @@ toggleButton.addEventListener('click', () => {
 
         localStorage.setItem("precio", precio.toFixed(2));
 
-
         actualizar();
-
-
     }
-
-
-
 
         function actualizar(){
 
@@ -72,7 +66,6 @@ toggleButton.addEventListener('click', () => {
 
             let position = carrito[index];
 
-
             carrito.splice(position, 1);
 
             let delprecio = parseFloat(position.price.slice(1));
@@ -80,8 +73,6 @@ toggleButton.addEventListener('click', () => {
             total.textContent = precio.toFixed(2);
 
             cuenta.textContent = carrito.length;
-
-
 
             localStorage.setItem("articulos", JSON.stringify(carrito));
             localStorage.setItem("precio", precio.toFixed(2));
@@ -99,7 +90,6 @@ toggleButton.addEventListener('click', () => {
             let preciolocal = localStorage.getItem("precio");
             
             if(itemlocal){
-                alert("Tus item han cargado");
 
                 carrito = JSON.parse(itemlocal);
                 precio = parseFloat(preciolocal);
@@ -108,11 +98,9 @@ toggleButton.addEventListener('click', () => {
                 actualizar();
 
             }
-
-
-
-
         }
+
+
 
 
         function vaciar2(){
@@ -126,8 +114,11 @@ toggleButton.addEventListener('click', () => {
 
         }
 
+botones.forEach(function(btn){
 
+    btn.addEventListener("click", anadir);
 
+});
 
 
 botones.forEach(function(btn){
@@ -136,12 +127,30 @@ botones.forEach(function(btn){
 
 });
 
+ // Obtener elementos
+ let modal = document.getElementById("myModal");
+ let btn = document.getElementById("openModal");
+ let close = document.querySelector(".close");
+
+ // Mostrar el modal al hacer clic en el botón
+ btn.addEventListener("click", function() {
+     modal.style.display = "flex";
 
 
+anadir();
 
 
-botones.forEach(function(btn){
+ });
 
-    btn.addEventListener("click", anadir);
-
-});
+ // Cerrar el modal al hacer clic en la "X"
+ close.addEventListener("click", function() {
+     modal.style.display = "none";
+ });
+ 
+ 
+        // Cerrar el modal si se hace clic fuera del contenido
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
